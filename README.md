@@ -89,8 +89,5 @@ Donate to me in ko-fi and paypal
 <br>
 https://ko-fi.com/blockydev
 
-<form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="4PKBRYSBB78TJ" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_LK/i/scr/pixel.gif" width="1" height="1" />
+https://www.paypal.com/donate/?hosted_button_id=LQN4RU4C4HQX2
 </form>
