@@ -1,0 +1,5 @@
+pywnp
+pypresence
+psutil
+wmi
+colorama
