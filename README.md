@@ -19,7 +19,28 @@
 Here're some of the project's best features:
 
 *   Displays your music and media details on discord rich presence
-*   ~Supports all the websites supported by WebNowPlaying-Redux~ (WIP)
+*   Supports all the websites supported by WebNowPlaying-Redux:
+    * Apple Music
+    * Bandcamp
+    * Deezer
+    * Invidious
+    * Jellyfin
+    * Kick
+    * Navidrome
+    * Netflix
+    * Pandora
+    * Plex
+    * Radio Addict
+    * Spotify
+    * SoundCloud
+    * Tidal
+    * Twitch
+    * VK
+    * Yandex Music
+    * YouTube
+    * YouTube Embeds
+    * YouTube Music
+* For having rich presence for unsupported sites please check [UNSUPPORTED.md](UNSUPPORTED.md)
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -68,7 +89,12 @@ python main.py
 ```
 start.bat
 ```
+<p>8. Set WebNowPlaying custom adapter at port 
 
+```
+6869
+```
+For More Help refer: [Custom_Port.md](Custom_Port.md)
   
   
 <h2>💻 Built with</h2>
