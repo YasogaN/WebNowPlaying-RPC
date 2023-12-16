@@ -19,7 +19,7 @@
 Here're some of the project's best features:
 
 *   Displays your music and media details on discord rich presence
-*   ~~Supports all the websites supported by WebNowPlaying-Redux ~~ (WIP)
+*   ~Supports all the websites supported by WebNowPlaying-Redux~ (WIP)
 
 <h2>🛠️ Installation Steps:</h2>
 
