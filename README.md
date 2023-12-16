@@ -41,7 +41,7 @@ Here're some of the project's best features:
     * YouTube Embeds
     * YouTube Music
 *   For having rich presence for unsupported sites please check [UNSUPPORTED.md](UNSUPPORTED.md)
-*   ~ Support for Desktop Players (Exclusive to Windows as of right now) ~ (Work In Progress)
+*   ~Support for Desktop Players (Exclusive to Windows as of right now)~ (Work In Progress)
 
 <h2>🛠️ Installation Steps:</h2>
 
