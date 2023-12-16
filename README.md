@@ -93,7 +93,7 @@ start.bat
 <p>8. Set WebNowPlaying custom adapter at port 
 
 ```
-6869
+6867
 ```
 For More Help refer: [Custom_Port.md](Custom_Port.md)
   
