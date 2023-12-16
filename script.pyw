@@ -66,13 +66,85 @@ def RPCUpdate(state, details, pltform):
     small_text = ""
 
     # set the small image and text to the platform name
-    if pltform == "YouTube Music":
-        small_image = "ytm"
-        small_text = "YouTube Music"
+    if pltform == "Apple Music":
+        small_image = "apm"
+        small_text = "Apple Music"
+        
+    elif pltform == "Bandcamp":
+        small_image = "bc"
+        small_text = "Bandcamp"
+        
+    elif pltform == "Deezer":
+        small_image = "dz"
+        small_text = "Deezer"
+
+    elif pltform == "Invidious":
+        small_image = "inv"
+        small_text = "Invidious"
+        
+    elif pltform == "Jellyfin":
+        small_image = "jf"
+        small_text = "Jellyfin"
+        
+    elif pltform == "Kick":
+        small_image = "kk"
+        small_text = "Kick"
+        
+    elif pltform == "Navidrome":
+        small_image = "nvd"
+        small_text = "Navidrome"
+        
+    elif pltform == "Netflix":
+        small_image = "ntf"
+        small_text = "Netflix"
+        
+    elif pltform == "Pandora":
+        small_image = "pnd"
+        small_text = "Pandora"
+        
+    elif pltform == "Plex":
+        small_image = "plx"
+        small_text = "Plex"
+        
+    elif pltform == "Radio Addict":
+        small_image = "rda"
+        small_text = "Radio Addict"
+
+    elif pltform == "Spotify":
+        small_image = "spt"
+        small_text = "Spotify"
+        
+    elif pltform == "SoundCloud":
+        small_image = "sdc"
+        small_text = "SoundCloud"
+        
+    elif pltform == "Tidal":
+        small_image = "td"
+        small_text = "Tidal"
+
+    elif pltform == "Twitch":
+        small_image = "twh"
+        small_text = "Twitch"
+        
+    elif pltform == "VK":
+        small_image = "vk"
+        small_text = "VK"
+        
+    elif pltform == "Yandex Music":
+        small_image = "yd"
+        small_text = "Yandex Music"
         
     elif pltform == "YouTube":
         small_image = "yt"
         small_text = "YouTube"
+        
+    elif pltform == "YouTube Embeds":
+        small_image = "yt"
+        small_text = "YouTube"
+        
+    elif pltform == "YouTube Music":
+        small_image = "ytm"
+        small_text = "YouTube Music"
         
     else:
         large_image = "base"
