@@ -59,11 +59,15 @@ https://wnp.keifufu.dev/extension/getting-started
 
 <p>3. Clone this github repo or get from releases</p>
 
+[Latest Release](https://github.com/YasogaN/WebNowPlaying-RPC/releases/latest)
+
+or
+
 ```
 git clone https://github.com/YasogaN/WebNowPlaying-RPC.git
 ```
 
-<p>4. Navigate to the cloned directory</p>
+<p>4. Navigate to the cloned/downloaded directory</p>
 
 <p>5. Open a terminal in the directory</p>
 
