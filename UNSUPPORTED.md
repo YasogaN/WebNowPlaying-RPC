@@ -3,7 +3,7 @@ Go to `Unsupported Sites` tab in the WebNowPlaying-Redux Browser Extension and t
 
 &#x2610; `Try to parse media from unsupported websites`
 
-![](assets/u1.png)
+<img src="https://i.imgur.com/TSQf44M.png" alt="project-screenshot" >
 
 ** Make sure it is set to allow on all websites for the extension to parse media on all sites
 
@@ -19,4 +19,4 @@ However in rare ocassions the `large_image` and `large_text` would not be workin
 - `small_image`: The search icon in this case
 - `small_text`: Text that appears when you hover your mouse over the search icon
 
-![](assets/u2.png)
+<img src="https://i.imgur.com/9MR1I53.png" alt="project-screenshot" >
