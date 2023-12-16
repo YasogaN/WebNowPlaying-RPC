@@ -55,7 +55,7 @@ def RPCUpdate(state, details, pltform):
         )
     )
     start_of_day_unix = time.mktime(start_of_day)
-
+    
     
     print(start_of_day_unix)
     
@@ -77,7 +77,7 @@ def RPCUpdate(state, details, pltform):
     elif pltform == "Deezer":
         small_image = "dz"
         small_text = "Deezer"
-
+        
     elif pltform == "Invidious":
         small_image = "inv"
         small_text = "Invidious"
@@ -109,7 +109,7 @@ def RPCUpdate(state, details, pltform):
     elif pltform == "Radio Addict":
         small_image = "rda"
         small_text = "Radio Addict"
-
+        
     elif pltform == "Spotify":
         small_image = "spt"
         small_text = "Spotify"
@@ -121,7 +121,7 @@ def RPCUpdate(state, details, pltform):
     elif pltform == "Tidal":
         small_image = "td"
         small_text = "Tidal"
-
+        
     elif pltform == "Twitch":
         small_image = "twh"
         small_text = "Twitch"
@@ -145,7 +145,6 @@ def RPCUpdate(state, details, pltform):
     elif pltform == "YouTube Music":
         small_image = "ytm"
         small_text = "YouTube Music"
-        
     else:
         large_image = "base"
         large_text = "My PC"
@@ -204,7 +203,6 @@ def GetInfo():
         arr["cover"] = WNPRedux.media_info.cover_url
         RPCUpdate(arr["artist"], arr["title"], arr["platform"])
     else:
-
         # if the user is not playing media load the My PC view
         RPCUpdate("", "", "Base")
 
@@ -218,4 +216,5 @@ def Start():
         # RPC.close()
         pass
     
+
 Start()
