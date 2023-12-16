@@ -13,7 +13,7 @@ The only downside in allowing this functionality would be that the `small_image`
 However in rare ocassions the `large_image` and `large_text` would not be working as well
 
 
-#### Example (Specially for Non-Tech Savvy people out there): 
+#### Explanation (Specially for Non-Tech Savvy people out there): 
 - `large_image`: Google Logo
 - `large_text`: Text that appears when you hover your mouse over the Google Logo
 - `small_image`: The search icon in this case
