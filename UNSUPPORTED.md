@@ -12,9 +12,8 @@ The only downside in allowing this functionality would be that the `small_image`
 
 However in rare ocassions the `large_image` and `large_text` would not be working as well
 
-For the non-tech savvy people out there it is the icon which is shown right below the large image.
 
-#### Example: 
+#### Example (Specially for Non-Tech Savvy people out there): 
 - `large_image`: Google Logo
 - `large_text`: Text that appears when you hover your mouse over the Google Logo
 - `small_image`: The search icon in this case
