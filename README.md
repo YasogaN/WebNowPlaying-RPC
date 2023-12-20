@@ -45,6 +45,7 @@ Here're some of the project's best features:
     * YouTube Music
 *   For having rich presence for unsupported sites please check [UNSUPPORTED.md](UNSUPPORTED.md)
 *   ~Support for Desktop Players (Exclusive to Windows as of right now)~ (Work In Progress)
+*   ~Application does not emit RPC signals when game is launched~ (TODO)
 
 ## 🛠️ Installation Steps:
 
