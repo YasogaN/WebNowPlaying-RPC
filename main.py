@@ -3,6 +3,15 @@ from colorama import Fore as color #for colorful text
 import os
 import subprocess
 
+# Clear the terminal
+# for windows
+if os.name == 'nt':
+    _ = os.system('cls')
+    
+# for mac and linux(here, os.name is 'posix')
+else:
+    _ = os.system('clear')
+
 # welcome message
 print(color.BLUE + "Welcome to the WebNowPlaying Discord Rich Presence CLI!")
 
