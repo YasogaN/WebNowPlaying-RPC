@@ -1,20 +1,23 @@
-<h1 align="center" id="title">WebNowPlaying-RPC</h1>
+# WebNowPlaying-RPC
 
-<p align="center"><img src="https://socialify.git.ci/YasogaN/WebNowPlaying-RPC/image?description=1&amp;descriptionEditable=A%20discord%20rich%20presence%20client%20for%20WebNowPlaying&amp;font=Rokkitt&amp;logo=https%3A%2F%2Fraw.githubusercontent.com%2FYasogaN%2FWebNowPlaying-RPC%2Fmain%2Fassets%2Ficon.svg&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Auto" alt="project-image"></p>
+![](https://socialify.git.ci/YasogaN/WebNowPlaying-RPC/image?description=1&amp;descriptionEditable=A%20discord%20rich%20presence%20client%20for%20WebNowPlaying&amp;font=Rokkitt&amp;logo=https%3A%2F%2Fraw.githubusercontent.com%2FYasogaN%2FWebNowPlaying-RPC%2Fmain%2Fassets%2Ficon.svg&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Auto)
 
-<h2>Project Screenshots:</h2>
+## Project Screenshots:
 
-<img src="https://i.imgur.com/KhYU4cd.png" alt="project-screenshot" >
-<br>
-<h3>View in Discord</h3>
-<p>When no music is playing</p>
-<img src="https://i.imgur.com/SUEMjNL.png" alt="project-screenshot">
-<p>When music is playing</p>
-<img src="https://i.imgur.com/vzrBE8s.png" alt="project-screenshot">
+![](https://i.imgur.com/KhYU4cd.png)
 
+### View in Discord
+
+When no music is playing:
+
+![](https://i.imgur.com/SUEMjNL.png)
+
+When music is playing:
+
+![](https://i.imgur.com/vzrBE8s.png)
   
   
-<h2>🧐 Features</h2>
+## 🧐 Features
 
 Here're some of the project's best features:
 
@@ -43,66 +46,58 @@ Here're some of the project's best features:
 *   For having rich presence for unsupported sites please check [UNSUPPORTED.md](UNSUPPORTED.md)
 *   ~Support for Desktop Players (Exclusive to Windows as of right now)~ (Work In Progress)
 
-<h2>🛠️ Installation Steps:</h2>
+## 🛠️ Installation Steps:
 
-<p>1. Install Python</p>
+1. Install Python
 
 ```
 https://www.python.org/downloads/
 ```
 
-<p>2. Install WebNowPlaying-Redux extension for your browser from</p>
+2. Install WebNowPlaying-Redux extension for your browser from
 
 ```
 https://wnp.keifufu.dev/extension/getting-started
 ```
 
-<p>3. Clone this github repo or get from releases</p>
+3. Get Latest Version from releases [here](https://github.com/YasogaN/WebNowPlaying-RPC/releases/latest).
 
-[Latest Release](https://github.com/YasogaN/WebNowPlaying-RPC/releases/latest)
+4. Navigate to the cloned/downloaded directory
 
-or
+5. Open a terminal in the directory
 
-```
-git clone https://github.com/YasogaN/WebNowPlaying-RPC.git
-```
-
-<p>4. Navigate to the cloned/downloaded directory</p>
-
-<p>5. Open a terminal in the directory</p>
-
-<p>6. Install dependencies</p>
+6. Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-<p>or on windows run</p>
+or on windows run
 
 ```
 install_dependencies.bat
 ```
 
-<p>7. Open the program</p>
+7. Open the program
 
 ```
 python main.py
 ```
 
-<p>or on windows run</p>
+or on windows run
 
 ```
 start.bat
 ```
-<p>8. Set WebNowPlaying custom adapter at port 
+8. Set WebNowPlaying custom adapter at port 
 
 ```
 6867
 ```
-For More Help refer: [Custom_Port.md](Custom_Port.md)
+For more help on how to set the custom port refer: [Custom_Port.md](Custom_Port.md)
   
   
-<h2>💻 Built with</h2>
+## 💻 Built with
 
 Technologies used in the project:
 
@@ -110,15 +105,14 @@ Technologies used in the project:
 *   pypresence
 *   pywnp
 
-<h2>🛡️ License:</h2>
+## 🛡️ License:
 
 This project is licensed under the MIT License
 
-<h2>💖Like my work?</h2>
+## 💖Like my work?
 
-Donate to me in ko-fi and paypal
-<br>
-https://ko-fi.com/blockydev
+Support me on ko-fi and paypal
 
-https://www.paypal.com/donate/?hosted_button_id=LQN4RU4C4HQX2
-</form>
+[![](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/blockydev)
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=LQN4RU4C4HQX2)
