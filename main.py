@@ -34,12 +34,12 @@ while True:
     # check the choice
     if choice == "1":
         print(color.BLUE + "Starting the RPC...") 
-        # Start the process
-        subprocess.Popen(["pythonw", "script.pyw"])
-        with open("pid.txt", "r") as file:
-            pid = file.read()
-            file.close()
-        print(color.GREEN + "Done!")
+        if os.path.isfile("pid.txt"):
+            print(color.RED + "RPC is already running!")
+        else:
+            # Start the process
+            subprocess.Popen(["pythonw", "script.pyw"])
+            print(color.GREEN + "Done!")
 
     # exit the rpc client
     elif choice == "2":
@@ -54,6 +54,7 @@ while True:
             # Kill the process
             os.system("taskkill /PID " + str(pid) + " /F")
             print(color.GREEN + "Done!")
+            os.remove("pid.txt")
         
         else:
             print(color.RED + "RPC is not running!")
