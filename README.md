@@ -8,7 +8,8 @@
 
 ## Built With
 
-![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white) ![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?style=for-the-badge&logo=discord&logoWidth=20) ![]() ![]() ![]() ![]() ![]()
+![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white) ![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?style=for-the-badge&logo=discord&logoWidth=20) ![](https://img.shields.io/badge/using-pywnp-purple?style=for-the-badge&logo=python
+) ![]() ![]() ![]() ![]()
 
 ## Browsers Supported
 
