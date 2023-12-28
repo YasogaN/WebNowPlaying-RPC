@@ -7,8 +7,22 @@ from psutil._common import bytes2human
 import wmi
 import os
 import traceback
+import subprocess
 
 computer = wmi.WMI()
+
+# stop other scripts from running
+def stop_other_scripts():
+    if os.path.isfile("pid.txt"):
+        with open("pid.txt", "r") as file:
+            pid = file.read()
+            file.close()
+        os.system("taskkill /PID " + str(pid) + " /F")
+        os.remove("pid.txt")
+    else:
+        pass
+
+stop_other_scripts()
 
 # save pid in a file
 def save_pid(pid):
@@ -231,8 +245,7 @@ def GetUptime():
 # restart the script
 def Restart():
     if GetUptime() > 3600:
-        os.system("pythonw script.pyw")
-        exit()
+        subprocess.Popen(["pythonw", "script.pyw"])
     else:
         pass
 
