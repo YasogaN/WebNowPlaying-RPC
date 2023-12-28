@@ -18,6 +18,9 @@ def save_pid(pid):
 # save the pid
 save_pid(os.getpid())
 
+# get the start time of the script
+startTime = time.time()
+
 # declare a array to used for sharing details between WNP and this script
 arr = {"title": "", "artist": "", "platform": "", "cover": "", "title_only": ""}
 
@@ -206,10 +209,24 @@ def GetInfo():
         # if the user is not playing media load the My PC view
         RPCUpdate("", "", "Base")
 
+# Get uptime of process
+def GetUptime():
+    return time.time() - startTime
+
+# restart the script
+def Restart():
+    if GetUptime() > 3600:
+        os.system("python script.pyw")
+        exit()
+    else:
+        pass
+
+# start the script
 def Start():
     try:
         while True:
             GetInfo()
+            Restart()
     except KeyboardInterrupt:
         pass
     finally:
