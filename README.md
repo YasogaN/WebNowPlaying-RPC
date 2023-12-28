@@ -2,6 +2,30 @@
 
 ![](https://socialify.git.ci/YasogaN/WebNowPlaying-RPC/image?description=1&amp;descriptionEditable=A%20discord%20rich%20presence%20client%20for%20WebNowPlaying&amp;font=Rokkitt&amp;logo=https%3A%2F%2Fraw.githubusercontent.com%2FYasogaN%2FWebNowPlaying-RPC%2Fmain%2Fassets%2Ficon.svg&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Auto)
 
+<div align="center">
+
+![](https://img.shields.io/github/license/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge&color=blue) ![](https://img.shields.io/github/realese/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/downloads/YasogaN/WebNowPlaying-RPC/total.svg?style=for-the-badge) ![](https://img.shields.io/github/forks/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/stars/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/watchers/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/issues/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge) ![](https://img.shields.io/github/languages/code-size/YasogaN/WebNowPlaying-RPC?style=for-the-badge)
+
+## Built With
+
+![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white) ![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?style=for-the-badge&logo=discord&logoWidth=20) ![](https://img.shields.io/badge/using-pywnp-purple?style=for-the-badge&logo=python
+) ![]() ![]() ![]() ![]()
+
+## Browsers Supported
+
+![](https://img.shields.io/badge/Brave-FF1B2D?style=for-the-badge&logo=Brave&logoColor=white) ![](https://img.shields.io/badge/Firefox_Browser-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white) ![](https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white) ![](https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white) ![](https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white) ![](https://img.shields.io/badge/Vivaldi-EF3939?style=for-the-badge&logo=Vivaldi&logoColor=white) 
+
+## Operating System Support
+
+![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
+<!---
+## Desktop Player Support 
+![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)  
+--->
+</div>
+
+
+
 ## Project Screenshots:
 
 ![](https://i.imgur.com/KhYU4cd.png)
@@ -96,15 +120,6 @@ start.bat
 6867
 ```
 For more help on how to set the custom port refer: [Custom_Port.md](Custom_Port.md)
-  
-  
-## 💻 Built with
-
-Technologies used in the project:
-
-*   Python 3.12
-*   pypresence
-*   pywnp
 
 ## 🛡️ License:
 
@@ -114,6 +129,4 @@ This project is licensed under the MIT License
 
 Support me on ko-fi and paypal
 
-[![](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/blockydev)
-
-[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=LQN4RU4C4HQX2)
+[![](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/blockydev) [![](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=LQN4RU4C4HQX2)
