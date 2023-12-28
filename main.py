@@ -2,6 +2,7 @@
 from colorama import Fore as color #for colorful text
 import os
 import subprocess
+import psutil
 
 # Clear the terminal
 # for windows
@@ -32,13 +33,24 @@ while True:
     print(color.BLUE + "\n\nPlease enter your choice:")
     choice = input() # get the choice from the user
     # check the choice
-    if choice == "1":
-        print(color.BLUE + "Starting the RPC...") 
+    if choice == "1": 
         if os.path.isfile("pid.txt"):
-            print(color.RED + "RPC is already running!")
+            with open("pid.txt", "r") as file:
+                pid = int(file.read())
+                file.close()
+            if psutil.pid_exists(pid):
+                print("Task with PID", pid, "exists.")
+                print(color.RED + "RPC is already running!")
+                print(color.BLUE + "New RPC will not be started!")
+            else:
+                print(color.RED + "!! RPC was shutdown unexpectedly !!")
+                print(color.BLUE + "Starting the RPC...")
+                subprocess.Popen(["pythonw", "script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+                print(color.GREEN + "Done!")
         else:
             # Start the process
-            subprocess.Popen(["pythonw", "script.pyw"])
+            print(color.BLUE + "Starting the RPC...")
+            subprocess.Popen(["pythonw", "script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
             print(color.GREEN + "Done!")
 
     # exit the rpc client
