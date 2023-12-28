@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![](https://img.shields.io/github/license/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge&color=blue) ![](https://img.shields.io/github/realese/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/downloads/YasogaN/WebNowPlaying-RPC/total.svg?style=for-the-badge) ![](https://img.shields.io/github/forks/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/stars/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/watchers/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/issues/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge) ![](https://img.shields.io/github/languages/code-size/YasogaN/WebNowPlaying-RPC?style=for-the-badge)
+![](https://img.shields.io/github/license/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge&color=blue) ![](https://img.shields.io/github/release/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/downloads/YasogaN/WebNowPlaying-RPC/total.svg?style=for-the-badge) ![](https://img.shields.io/github/forks/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/stars/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/watchers/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/github/issues/YasogaN/WebNowPlaying-RPC.svg?style=for-the-badge) ![](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge) ![](https://img.shields.io/github/languages/code-size/YasogaN/WebNowPlaying-RPC?style=for-the-badge)
 
 ## Built With
 
