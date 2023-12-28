@@ -246,6 +246,7 @@ def GetUptime():
 def Restart():
     if GetUptime() > 3600:
         subprocess.Popen(["pythonw", "script.pyw"])
+        os._exit(0)
     else:
         pass
 
@@ -260,6 +261,7 @@ def Start():
     except Exception as e:
         logger(time.strftime("%H:%M:%S", time.localtime()), "ERROR", f"Error in main loop: {str(e)}")
         traceback.print_exc()
+        Restart()
     finally:
         # RPC.close()
         pass
