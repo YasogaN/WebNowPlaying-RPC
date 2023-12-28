@@ -231,7 +231,7 @@ def GetUptime():
 # restart the script
 def Restart():
     if GetUptime() > 3600:
-        os.system("python script.pyw")
+        os.system("pythonw script.pyw")
         exit()
     else:
         pass
