@@ -169,6 +169,11 @@ def RPCUpdate(state, details, pltform):
         elif pltform == "YouTube Music":
             small_image = "ytm"
             small_text = "YouTube Music"
+            
+        elif pltform == "Windows Media Session":
+            large_image = "wms"
+            large_text = "Windows Media Session"
+            state = "Windows Media Session"
         else:
             large_image = "base"
             large_text = "My PC"
@@ -180,7 +185,7 @@ def RPCUpdate(state, details, pltform):
             details = f"{computer.Win32_Processor()[0].Name}" 
         
         # set the large image and text to the cover and title of the song only when the song is playing
-        if WNPRedux.is_started and isinstance(WNPRedux.media_info.artist, str) and WNPRedux.media_info.state == "PLAYING":
+        if WNPRedux.is_started and isinstance(WNPRedux.media_info.artist, str) and WNPRedux.media_info.state == "PLAYING" and pltform != "Windows Media Session":
             large_image = arr["cover"]
             large_text = arr["title_only"]
         else:
