@@ -37,7 +37,7 @@ while True:
     print(color.YELLOW + "2. Stop the rich presence client")
     print(color.RED + "3. Exit")
     print(color.WHITE + "---------------------------")
-    print(color.CYAN + "4. Create task in task scheduler")
+    print(color.CYAN + "4. Create task in task scheduler (Start WebNowPlayingRPC on startup)")
     print(color.WHITE + "---------------------------")
     print(color.MAGENTA + "Note: If you are using the task scheduler, you can close this window.")
     print(color.WHITE + "---------------------------")
