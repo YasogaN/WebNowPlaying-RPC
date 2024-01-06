@@ -67,7 +67,7 @@ Here're some of the project's best features:
     * YouTube
     * YouTube Embeds
     * YouTube Music
-*   For having rich presence for unsupported sites please check [UNSUPPORTED.md](UNSUPPORTED.md)
+*   For having rich presence for unsupported sites please check [UNSUPPORTED.md](docs/UNSUPPORTED.md)
 *   Support for Desktop Players (Exclusive to Windows as of right now)
 *   ~Application does not emit RPC signals when game is launched~ (TODO)
 
@@ -119,7 +119,7 @@ start.bat
 ```
 6867
 ```
-For more help on how to set the custom port refer: [Custom_Port.md](Custom_Port.md)
+For more help on how to set the custom port refer: [Custom_Port.md](docs/Custom_Port.md)
 
 ## 🛡️ License:
 
