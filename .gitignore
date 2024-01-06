@@ -1,2 +1,6 @@
-/pid.txt
-/log.txt
+# git files
+/.git
+
+# runtime files
+/src/pid.txt
+/src/log.txt
