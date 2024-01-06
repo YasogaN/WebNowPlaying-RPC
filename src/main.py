@@ -30,7 +30,12 @@ while True:
     print(color.GREEN + "1. Start the rich presence client")
     print(color.YELLOW + "2. Stop the rich presence client")
     print(color.RED + "3. Exit")
-    print(color.BLUE + "\n\nPlease enter your choice:")
+    print(color.WHITE + "---------------------------")
+    print(color.CYAN + "4. Create task in task scheduler")
+    print(color.WHITE + "---------------------------")
+    print(color.MAGENTA + "Note: If you are using the task scheduler, you can close this window.")
+    print(color.WHITE + "---------------------------")
+    print(color.BLUE + "\n\nPlease enter your choice:" + color.WHITE, end=" ")
     choice = input() # get the choice from the user
     # check the choice
     if choice == "1": 
@@ -74,6 +79,13 @@ while True:
     # exit the program
     elif choice == "3":
         exit()
+    
+    elif choice == "4":
+        # create taskshechduler task
+        print(color.BLUE + "Creating task...")
+        #ask for admin rights and create task scheduler task
+        os.system("powershell -Command \"Start-Process cmd -Verb RunAs -ArgumentList '/c schtasks /create /sc onlogon /tn WebNowPlaying /delay 0000:59 /tr " + os.getcwd() + "\\script.pyw'\"")
+        print (color.GREEN + "Done!")
     
     # invalid choice
     else:
