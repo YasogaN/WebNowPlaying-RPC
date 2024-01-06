@@ -6,12 +6,16 @@ import psutil
 
 # Clear the terminal
 # for windows
-if os.name == 'nt':
-    _ = os.system('cls')
+
+def clear():
+    if os.name == 'nt':
+        _ = os.system('cls')
     
-# for mac and linux(here, os.name is 'posix')
-else:
-    _ = os.system('clear')
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = os.system('clear')
+
+clear()
 
 # welcome message
 print(color.BLUE + "Welcome to the WebNowPlaying Discord Rich Presence CLI!")
@@ -39,8 +43,8 @@ while True:
     choice = input() # get the choice from the user
     # check the choice
     if choice == "1": 
-        if os.path.isfile("pid.txt"):
-            with open("pid.txt", "r") as file:
+        if os.path.isfile("src/pid.txt"):
+            with open("src/pid.txt", "r") as file:
                 pid = int(file.read())
                 file.close()
             if psutil.pid_exists(pid):
@@ -50,30 +54,34 @@ while True:
             else:
                 print(color.RED + "!! RPC was shutdown unexpectedly !!")
                 print(color.BLUE + "Starting the RPC...")
-                subprocess.Popen(["pythonw", "script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+                subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+                clear()
                 print(color.GREEN + "Done!")
         else:
             # Start the process
             print(color.BLUE + "Starting the RPC...")
-            subprocess.Popen(["pythonw", "script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+            subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+            clear()
             print(color.GREEN + "Done!")
 
     # exit the rpc client
     elif choice == "2":
         # Check if the process is running
-        if 'pid' in globals() or os.path.isfile("pid.txt"):
-            if os.path.isfile("pid.txt"):
-                with open("pid.txt", "r") as file:
+        if 'pid' in globals() or os.path.isfile("src/pid.txt"):
+            if os.path.isfile("src/pid.txt"):
+                with open("src/pid.txt", "r") as file:
                     pid = file.read()
                     file.close()
             print(color.BLUE + "Stopping the RPC...")
             
             # Kill the process
             os.system("taskkill /PID " + str(pid) + " /F")
+            os.remove("src/pid.txt")
+            clear()
             print(color.GREEN + "Done!")
-            os.remove("pid.txt")
-        
+
         else:
+            clear()
             print(color.RED + "RPC is not running!")
     
     # exit the program
@@ -84,9 +92,11 @@ while True:
         # create taskshechduler task
         print(color.BLUE + "Creating task...")
         #ask for admin rights and create task scheduler task
-        os.system("powershell -Command \"Start-Process cmd -Verb RunAs -ArgumentList '/c schtasks /create /sc onlogon /tn WebNowPlaying /delay 0000:59 /tr " + os.getcwd() + "\\script.pyw'\"")
+        os.system("powershell -Command \"Start-Process cmd -Verb RunAs -ArgumentList '/c schtasks /create /sc onlogon /tn WebNowPlaying /delay 0000:59 /tr " + os.getcwd() + "\\src\\script.pyw'\"")
+        clear()
         print (color.GREEN + "Done!")
     
     # invalid choice
     else:
         print(color.RED + "Invalid choice!")
+        clear()

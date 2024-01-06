@@ -13,12 +13,12 @@ computer = wmi.WMI()
 
 # stop other scripts from running
 def stop_other_scripts():
-    if os.path.isfile("pid.txt"):
-        with open("pid.txt", "r") as file:
+    if os.path.isfile("src/pid.txt"):
+        with open("src/pid.txt", "r") as file:
             pid = file.read()
             file.close()
         os.system("taskkill /PID " + str(pid) + " /F")
-        os.remove("pid.txt")
+        os.remove("src/pid.txt")
     else:
         pass
 
@@ -26,7 +26,7 @@ stop_other_scripts()
 
 # save pid in a file
 def save_pid(pid):
-    with open("pid.txt", "w") as file:
+    with open("src/pid.txt", "w") as file:
         file.write(str(pid))
         file.close()
 
@@ -47,14 +47,14 @@ RPC.connect()
 
 # delete previous log
 try:
-    os.remove("log.txt")
+    os.remove("src/log.txt")
 except:
     pass
 
 # start logger
 def logger(time, type, message):
     print(f"[{time}] - {type}: {message}")
-    log = open("log.txt", "a")
+    log = open("src/log.txt", "a")
     log.write(f"[{time}] - {type}: {message}\n")
     log.close()
 
