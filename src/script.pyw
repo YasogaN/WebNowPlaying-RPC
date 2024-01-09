@@ -250,7 +250,7 @@ def GetUptime():
 # restart the script
 def Restart():
     if GetUptime() > 3600:
-        subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+        subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW, shell=False)
         os._exit(0)
     else:
         pass

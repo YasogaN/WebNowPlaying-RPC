@@ -57,13 +57,13 @@ while True:
             else:
                 print(color.RED + "!! RPC was shutdown unexpectedly !!")
                 print(color.BLUE + "Starting the RPC...")
-                subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+                subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW, shell=False)
                 clear_console()
                 print(color.GREEN + "Done!")
         else:
             # Start the process
             print(color.BLUE + "Starting the RPC...")
-            subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW)
+            subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW, shell=False)
             clear_console()
             print(color.GREEN + "Done!")
 
