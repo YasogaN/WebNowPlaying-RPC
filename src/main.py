@@ -4,6 +4,7 @@ import os
 import subprocess
 import psutil
 import ctypes
+from win32com.client import Dispatch
 
 # clear_console the terminal
 # for windows
@@ -37,9 +38,7 @@ while True:
     print(color.YELLOW + "2. Stop the rich presence client")
     print(color.RED + "3. Exit")
     print(color.WHITE + "---------------------------")
-    print(color.CYAN + "4. Create task in task scheduler (Start WebNowPlayingRPC on startup)")
-    print(color.WHITE + "---------------------------")
-    print(color.MAGENTA + "Note: If you are using the task scheduler, you can close this window.")
+    print(color.CYAN + "4. Start WebNowPlaying on startup")
     print(color.WHITE + "---------------------------")
     print(color.BLUE + "\n\nPlease enter your choice:" + color.WHITE, end=" ")
     choice = input() # get the choice from the user
@@ -50,21 +49,21 @@ while True:
                 pid = int(file.read())
                 file.close()
             if psutil.pid_exists(pid):
-                print("Task with PID", pid, "exists.")
                 clear_console()
+                print("Task with PID", pid, "exists.")
                 print(color.RED + "RPC is already running!")
                 print(color.BLUE + "New RPC will not be started!")
             else:
+                clear_console()
                 print(color.RED + "!! RPC was shutdown unexpectedly !!")
                 print(color.BLUE + "Starting the RPC...")
                 subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW, shell=False)
-                clear_console()
                 print(color.GREEN + "Done!")
         else:
             # Start the process
+            clear_console()
             print(color.BLUE + "Starting the RPC...")
             subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW, shell=False)
-            clear_console()
             print(color.GREEN + "Done!")
 
     # exit the rpc client
@@ -92,14 +91,23 @@ while True:
         exit()
     
     elif choice == "4":
-        # create taskshechduler task
-        print(color.BLUE + "Creating task...")
-        #ask for admin rights and create task scheduler task
-        os.system("powershell -Command \"Start-Process cmd -Verb RunAs -ArgumentList '/c schtasks /create /sc onlogon /tn WebNowPlaying /delay 0000:59 /tr " + os.getcwd() + "\\src\\script.pyw'\"")
         clear_console()
-        print (color.GREEN + "Done!")
-    
+        print(color.BLUE + "Starting WebNowPlaying on startup...")
+        path = os.environ["APPDATA"] + "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\WebNowPlaying.lnk"
+        print(color.BLUE + "Creating shortcut at " + path)
+        shell = Dispatch("WScript.Shell")
+        startup_path = os.path.dirname(os.path.realpath(__file__))
+        startup_path = startup_path.replace(" ", "%20")
+        startup_path = startup_path.replace("\\", "/")
+        target = startup_path + "/script.pyw"
+        shortcut = shell.CreateShortCut(path)
+        shortcut.Targetpath = target
+        shortcut.IconLocation = startup_path + "/icon.ico"
+        shortcut.WorkingDirectory = startup_path
+        shortcut.save()
+        clear_console()
+        print(color.GREEN + "Done!")    
     # invalid choice
     else:
-        print(color.RED + "Invalid choice!")
         clear_console()
+        print(color.RED + "Invalid choice!")
