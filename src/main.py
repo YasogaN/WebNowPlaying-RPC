@@ -103,9 +103,8 @@ while True:
         shortcut = shell.CreateShortCut(path)
         shortcut.Targetpath = target
         shortcut.IconLocation = startup_path + "/icon.ico"
-        shortcut.WorkingDirectory = startup_path
+        shortcut.WorkingDirectory = startup_path.rstrip("src")
         shortcut.save()
-        clear_console()
         print(color.GREEN + "Done!")    
     # invalid choice
     else:
