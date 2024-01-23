@@ -38,8 +38,9 @@ while True:
     print(color.YELLOW + "2. Stop the rich presence client")
     print(color.RED + "3. Exit")
     print(color.WHITE + "---------------------------")
-    print(color.CYAN + "4. Start WebNowPlaying on startup")
-    print(color.WHITE + "---------------------------")
+    if os.system == 'nt':
+        print(color.CYAN + "4. Start WebNowPlaying on startup")
+        print(color.WHITE + "---------------------------")
     print(color.BLUE + "\n\nPlease enter your choice:" + color.WHITE, end=" ")
     choice = input() # get the choice from the user
     # check the choice
@@ -65,7 +66,7 @@ while True:
             print(color.BLUE + "Starting the RPC...")
             subprocess.Popen(["pythonw", "src/script.pyw"], creationflags=subprocess.CREATE_NO_WINDOW, shell=False)
             print(color.GREEN + "Done!")
-
+    
     # exit the rpc client
     elif choice == "2":
         # Check if the process is running
@@ -81,7 +82,7 @@ while True:
             os.remove("src/pid.txt")
             clear_console()
             print(color.GREEN + "Done!")
-
+        
         else:
             clear_console()
             print(color.RED + "RPC is not running!")
@@ -106,6 +107,7 @@ while True:
         shortcut.WorkingDirectory = startup_path.rstrip("src")
         shortcut.save()
         print(color.GREEN + "Done!")    
+    
     # invalid choice
     else:
         clear_console()
