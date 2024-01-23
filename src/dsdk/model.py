@@ -1,5 +1,5 @@
 from . import sdk
-from .enum import Status, RelationshipType, ImageType, LobbyType, InputModeType, SkuType, EntitlementType, ActivityPartyPrivacy, ActivitySupportedPlatformFlags
+from .enum import Status, RelationshipType, ImageType, LobbyType, InputModeType, SkuType, EntitlementType, ActivityPartyPrivacy, ActivitySupportedPlatformFlags, ActivityType
 from enum import Enum
 import ctypes
 
@@ -109,6 +109,7 @@ class ActivitySecrets(Model):
         ("Spectate", "spectate", str)
     ]
     
+
 class Activity(Model):
     _struct_ = sdk.DiscordActivity
     _fields_ = [
@@ -116,6 +117,7 @@ class Activity(Model):
         ("Name", "name", str),
         ("State", "state", str),
         ("Details", "details", str),
+        ("Type", "type", ActivityType),
         ("Timestamps", "timestamps", ActivityTimestamps),
         ("Assets", "assets", ActivityAssets),
         ("Party", "party", ActivityParty),
