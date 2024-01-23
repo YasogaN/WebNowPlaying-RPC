@@ -4,3 +4,7 @@
 # runtime files
 src/pid.txt
 src/log.txt
+
+#pycache
+__pycache__/
+```
