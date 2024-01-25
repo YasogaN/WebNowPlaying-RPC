@@ -3,3 +3,4 @@ pypresence
 psutil
 wmi
 colorama
+discord.py
